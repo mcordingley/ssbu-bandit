@@ -1,0 +1,47 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 70rem) {
+    #app-container {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+#fighter-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.grid { display: grid; }
+.grid-gap-1 { grid-gap: 0.5rem; }
+.grid-gap-2 { grid-gap: 1rem; }
+
+.mxauto { margin-left: auto; margin-right: auto; }
+.my2 { margin-bottom: 1rem; margin-top: 1rem; }
+.mb0 { margin-bottom: 0; }
+
+.grayscale { filter: grayscale(100%); }
+.pointer { cursor: pointer; }
+.strike-through { text-decoration: line-through; }
+
+.dark-blue { color: #08f; }
+.gray { color: gray; }
+
+.condensed { font-family: 'Roboto Condensed', sans-serif; }
+.text-center { text-align: center; }
+.text-columns { column-width: 80em; }
+.text-right { text-align: right; }
+.text-smaller { font-size: .8em; }
+.uppercase { text-transform: uppercase; }

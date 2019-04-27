@@ -1,0 +1,308 @@
+{
+    "fighters": [
+        {
+            "number": "1",
+            "name": "Mario"
+        },
+        {
+            "number": "2",
+            "name": "Donkey Kong"
+        },
+        {
+            "number": "3",
+            "name": "Link"
+        },
+        {
+            "number": "4",
+            "name": "Samus"
+        },
+        {
+            "number": "4ε",
+            "name": "Dark Samus"
+        },
+        {
+            "number": "5",
+            "name": "Yoshi"
+        },
+        {
+            "number": "6",
+            "name": "Kirby"
+        },
+        {
+            "number": "7",
+            "name": "Fox"
+        },
+        {
+            "number": "8",
+            "name": "Pikachu"
+        },
+        {
+            "number": "9",
+            "name": "Luigi"
+        },
+        {
+            "number": "10",
+            "name": "Ness"
+        },
+        {
+            "number": "11",
+            "name": "Captain Falcon"
+        },
+        {
+            "number": "12",
+            "name": "Jigglypuff"
+        },
+        {
+            "number": "13",
+            "name": "Peach"
+        },
+        {
+            "number": "13ε",
+            "name": "Daisy"
+        },
+        {
+            "number": "14",
+            "name": "Bowser"
+        },
+        {
+            "number": "15",
+            "name": "Ice Climbers"
+        },
+        {
+            "number": "16",
+            "name": "Sheik"
+        },
+        {
+            "number": "17",
+            "name": "Zelda"
+        },
+        {
+            "number": "18",
+            "name": "Dr. Mario"
+        },
+        {
+            "number": "19",
+            "name": "Pichu"
+        },
+        {
+            "number": "20",
+            "name": "Falco"
+        },
+        {
+            "number": "21",
+            "name": "Marth"
+        },
+        {
+            "number": "21ε",
+            "name": "Lucina"
+        },
+        {
+            "number": "22",
+            "name": "Young Link"
+        },
+        {
+            "number": "23",
+            "name": "Ganondorf"
+        },
+        {
+            "number": "24",
+            "name": "Mewtwo"
+        },
+        {
+            "number": "25",
+            "name": "Roy"
+        },
+        {
+            "number": "25ε",
+            "name": "Chrom"
+        },
+        {
+            "number": "26",
+            "name": "Mr. Game & Watch"
+        },
+        {
+            "number": "27",
+            "name": "Meta Knight"
+        },
+        {
+            "number": "28",
+            "name": "Pit"
+        },
+        {
+            "number": "28ε",
+            "name": "Dark Pit"
+        },
+        {
+            "number": "29",
+            "name": "Zero Suit Samus"
+        },
+        {
+            "number": "30",
+            "name": "Wario"
+        },
+        {
+            "number": "31",
+            "name": "Snake"
+        },
+        {
+            "number": "32",
+            "name": "Ike"
+        },
+        {
+            "number": "33-35",
+            "name": "Pokemon Trainer"
+        },
+        {
+            "number": "36",
+            "name": "Diddy Kong"
+        },
+        {
+            "number": "37",
+            "name": "Lucas"
+        },
+        {
+            "number": "38",
+            "name": "Sonic"
+        },
+        {
+            "number": "39",
+            "name": "King Dedede"
+        },
+        {
+            "number": "40",
+            "name": "Olimar"
+        },
+        {
+            "number": "41",
+            "name": "Lucario"
+        },
+        {
+            "number": "42",
+            "name": "R.O.B."
+        },
+        {
+            "number": "43",
+            "name": "Toon Link"
+        },
+        {
+            "number": "44",
+            "name": "Wolf"
+        },
+        {
+            "number": "45",
+            "name": "Villager"
+        },
+        {
+            "number": "46",
+            "name": "Mega Man"
+        },
+        {
+            "number": "47",
+            "name": "Wii Fit Trainer"
+        },
+        {
+            "number": "48",
+            "name": "Rosalina & Luma"
+        },
+        {
+            "number": "49",
+            "name": "Little Mac"
+        },
+        {
+            "number": "50",
+            "name": "Greninja"
+        },
+        {
+            "number": "51",
+            "name": "Mii Brawler"
+        },
+        {
+            "number": "52",
+            "name": "Mii Swordfighter"
+        },
+        {
+            "number": "53",
+            "name": "Mii Gunner"
+        },
+        {
+            "number": "54",
+            "name": "Palutena"
+        },
+        {
+            "number": "55",
+            "name": "Pac-Man"
+        },
+        {
+            "number": "56",
+            "name": "Robin"
+        },
+        {
+            "number": "57",
+            "name": "Shulk"
+        },
+        {
+            "number": "58",
+            "name": "Bowser Jr."
+        },
+        {
+            "number": "59",
+            "name": "Duck Hunt"
+        },
+        {
+            "number": "60",
+            "name": "Ryu"
+        },
+        {
+            "number": "60ε",
+            "name": "Ken"
+        },
+        {
+            "number": "61",
+            "name": "Cloud"
+        },
+        {
+            "number": "62",
+            "name": "Corrin"
+        },
+        {
+            "number": "63",
+            "name": "Bayonetta"
+        },
+        {
+            "number": "64",
+            "name": "Inkling"
+        },
+        {
+            "number": "65",
+            "name": "Ridley"
+        },
+        {
+            "number": "66",
+            "name": "Simon"
+        },
+        {
+            "number": "66ε",
+            "name": "Richter"
+        },
+        {
+            "number": "67",
+            "name": "King K. Rool"
+        },
+        {
+            "number": "68",
+            "name": "Isabelle"
+        },
+        {
+            "number": "69",
+            "name": "Incineroar"
+        },
+        {
+            "number": "70",
+            "name": "Piranha Plant"
+        },
+        {
+            "number": "71",
+            "name": "Joker"
+        }
+    ]
+}

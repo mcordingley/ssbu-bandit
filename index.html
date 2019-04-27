@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>SSBU Fighter Picker</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="app" v-cloak>
+            <h1>SSBU Fighter Recommender</h1>
+
+            <div id="app-container" class="grid grid-gap-2">
+                <div>
+                    <div v-if="nextFighter" class="mxauto" style="max-width: 17rem;">
+                        <h2>Recommended Fighter</h2>
+                        <fp-fighter :fighter="nextFighter" :key="nextFighter.number" />
+                    </div>
+
+                    <h2>Fighters</h2>
+
+                    <div class="my2 text-right">
+                        Sort By
+                        <label><input type="radio" value="number" v-model="sort">Number</label>
+                        <label><input type="radio" value="name" v-model="sort">Name</label>
+                        <label><input type="radio" value="ratio" v-model="sort">Win Ratio</label>
+                    </div>
+
+                    <div id="fighter-list" class="grid grid-gap-1 grid-space-between-content">
+                        <fp-fighter v-for="fighter in sortedFighters" :fighter="fighter" :key="fighter.id" />
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="mb0">What is This?</h2>
+
+                    <div class="text-columns">
+                        <p>
+                            This is a fighter recommendation system based on the stochastic multi-armed bandit problem. It will balance exploiting your best known fighter,
+                            based on win/loss ratios, and exploring other fighters. If followed, the tool will find your best fighter while spending a minimum of time on
+                            other fighters, even if you spent a lot of time on a main that you end up not being best at. Initial use will likely focus on exploration of
+                            fighters before it starts to focus on the best fighters.
+                        </p>
+
+                        <p>
+                            As a matter of practicality, the tool will only start recommending fighters who have at least one win or loss. It is up to you to gather that
+                            first sample from each fighter. Otherwise, the tool would recommend trying every fighter at least once before it started making more tuned
+                            recommendations. It's also possible to remove previously played fighters from consideration by clicking on that fighter's name.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <template id="fighter-template">
+            <div :class="wrapperClasses">
+                <div :class="nameClasses" @click="fighter.selected = !fighter.selected">{{ fighter.name }}</div>
+
+                <div class="gray text-center text-smaller">{{ fighter.wins }} - {{ fighter.losses }}</div>
+
+                <div class="my2 text-center">
+                    <input type="button" @click="fighter.wins++" value="Won" />
+                    <input type="button" @click="fighter.losses++" value="Lost" />
+                </div>
+            </div>
+        </template>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
