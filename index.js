@@ -100,7 +100,7 @@ function initialize (data) {
         data: function () {
             return {
                 fighters,
-                sort: localStorage.getItem('fighter-sort') || 'id'
+                sort: localStorage.getItem('fighter-sort') || 'number'
             };
         },
         el: '#app',
