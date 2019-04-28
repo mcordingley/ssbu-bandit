@@ -90,7 +90,7 @@ function initialize (data) {
                         break;
                     case 'number':
                     default:
-                        sortFunction = (a, b) => a.number.localeCompare(b.number);
+                        sortFunction = (a, b) => parseInt(a.number) - parseInt(b.number);
                         break;
                 }
 
