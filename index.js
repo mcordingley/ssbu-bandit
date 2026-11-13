@@ -58,7 +58,7 @@ function initialize (data) {
                 for (const candidate of candidates) {
                     const candidateTotal = candidate.wins + candidate.losses,
                         mean = candidate.wins / candidateTotal,
-                        variancePremium = Math.sqrt(2 * Math.log(totalFights / candidateTotal)),
+                        variancePremium = Math.sqrt(2 * Math.log(totalFights) / candidateTotal),
                         score = mean + variancePremium;
 
                     if (!nextFighter || score > nextFighterScore) {
