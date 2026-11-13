@@ -50,7 +50,8 @@ function initialize (data) {
         computed: {
             nextFighter: function () {
                 const candidates = fighters.filter(fighter => fighter.selected && (fighter.wins || fighter.losses)),
-                    totalFights = candidates.reduce((total, candidate) => total + candidate.wins + candidate.losses, 0);
+                    totalFights = candidates.reduce((total, candidate) => total + candidate.wins + candidate.losses, 0),
+                    logTotalFights = Math.log(totalFights);
 
                 let nextFighter = null,
                     nextFighterScore = null;
@@ -58,7 +59,7 @@ function initialize (data) {
                 for (const candidate of candidates) {
                     const candidateTotal = candidate.wins + candidate.losses,
                         mean = candidate.wins / candidateTotal,
-                        variancePremium = Math.sqrt(2 * Math.log(totalFights) / candidateTotal),
+                        variancePremium = Math.sqrt(2 * logTotalFights / candidateTotal),
                         score = mean + variancePremium;
 
                     if (!nextFighter || score > nextFighterScore) {
